@@ -2,7 +2,7 @@ local function damageLogger(event)
 
     if (event:GetName() == 'player_hurt' ) then
         
-        local localPlayer = entities.GetLocalPlayer();
+        local localPlayer = entities.GetLocalPlayer()
         local victim = entities.GetByUserID(event:GetInt("userid"))
         local health = event:GetInt("health")
         local attacker = entities.GetByUserID(event:GetInt("attacker"))
